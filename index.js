@@ -19,6 +19,12 @@ drumClick.forEach(function(drumClick){
         
 })
 
+drumClick.addEventListener("touchstart", function(){
+    var drumbtn = this.innerHTML;
+    makeSound(drumbtn);
+    buttonAnimation(drumbtn);
+})
+
 
 });
 
@@ -73,3 +79,30 @@ setTimeout(function(){
 },100)
 
 }
+
+
+
+/*
+let fruits = ["apple", "banana", "cherry"];
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});
+
+doesn't give any thing back
+cant break out of loop
+
+
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+
+
+n summary, forEach is a handy way to work with lists in JavaScript because it’s simple and easy to read. However, it has some limitations compared to other loops, like not allowing you to stop early or return values. As you learn more about programming, you’ll get to know when to use forEach and when to use other types of loops!
+
+Feel free to ask if you have any more questions or if something isn’t clear!
+
+
+
+*/

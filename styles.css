@@ -13,7 +13,7 @@ h1 {
 footer {
   color: #dbedf3;
   font-family: sans-serif;
-} 
+}
 
 .w {
   background-image: url(./images/tom1.png);
@@ -77,6 +77,26 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+#wrong {
+  background-color: rgb(133, 8, 8);
+  display: flex;
+  position: relative;
+  transform: translateY(-100%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Smaller title font on mobile */
+  }
+
+  .drum {
+    width: 100px; /* Smaller buttons on mobile */
+    height: 100px; /* Smaller buttons on mobile */
+    font-size: 3rem; /* Smaller text on buttons */
+  }
 }
 
 #wrong {
